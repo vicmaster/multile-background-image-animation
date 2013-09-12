@@ -1,0 +1,48 @@
+.animate-area	{ 
+	background-image: url(superman.png), url(supergirl.png), url(bg-clouds.png);
+	background-position: 20px -90px, 30px 80px, 0px 0px;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+}
+
+@keyframes animatedSuperman {
+	from { background-position: 20px 20px, 30px 80px, 0 0; }
+	to { background-position: 300px -90px, 30px 20px, 100% 0; }
+}
+		
+@keyframes animatedSuperman {
+  from { background-position: 20px 20px, 30px 80px, 0 0; }
+  to { background-position: 300px -90px, 30px 20px, 100% 0; }
+}
+@-webkit-keyframes animatedSuperman {
+  from { background-position: 20px 20px, 30px 80px, 0 0; }
+  to { background-position: 300px -90px, 30px 20px, 100% 0; }
+}
+@-ms-keyframes animatedSuperman {
+  from { background-position: 20px 20px, 30px 80px, 0 0; }
+  to { background-position: 300px -90px, 30px 20px, 100% 0; }
+}
+@-moz-keyframes animatedSuperman {
+  from { background-position: 20px -90px, 30px 80px, 0 0; }
+  to { background-position: 300px -90px, 30px 20px, 100% 0; }
+}
+
+
+.animate-area	{ 
+	animation: animatedSuperman 4s linear infinite;
+}
+
+.animate-area2	{ 
+  width: 560px; 
+  height: 190px; 
+
+  background-image: url(superman.png), url(supergirl.png), url(bg-clouds.png);
+  background-position: 20px -90px, 30px 80px, 0px 0px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+
+  animation: animatedSuperman 4s linear infinite;
+  -ms-animation: animatedSuperman 4s linear infinite;
+  -moz-animation: animatedSuperman 4s linear infinite;
+  -webkit-animation: animatedSuperman 4s linear infinite;
+
+  overflow: hidden;
+}
